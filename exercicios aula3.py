@@ -6,17 +6,25 @@ if velocidade >= 80:
 else:
     print("Carro na velocidade permitida")
 '''
-'''
+
 num1 = int(input("Insira o seu primeiro número: "))
 num2 = int(input("Insira o seu segundo número: "))
 num3 = int(input("Insira o seu terceiro número: "))
 maior = num1
 if num2 >= num3 and num2 >= num1:
     maior = num2
-if num3 >=
+if num3 >= num1 and num3 >= num2:
+    maior = num3
+print(maior,"é o maior número.")
+menor = num1
+if num2 <= num3 and num2 <= num1:
+    menor = num2
+if num3 <= num1 and num3 <= num2:
+    menor = num3
+print(menor,"é o menor número.")
 if num1 >= num2 and num1 >= num3:
     if num2 >= num3:
-        #print("Os números em forma crescente: ",num1," - ",num2," - ",num3)
+        print("Os números em forma crescente: ",num1," - ",num2," - ",num3)
     else:
         print("Os números em forma crescente: ",num1," - ",num3," - ",num2)
 elif num2 >= num1 and num2 >= num3:
@@ -29,7 +37,7 @@ else:
         print("Os números em forma crescente: ",num3," - ",num1," - ",num2)
     else:
         print("Os números em forma crescente: ",num3," - ",num2," - ",num1)
-'''
+
 '''
 sal = float(input("Insira seu salário: "))
 if sal >= 1250.00:
